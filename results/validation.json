@@ -1,0 +1,30 @@
+[
+  {
+    "check": "unique month",
+    "passed": true
+  },
+  {
+    "check": "no missing price",
+    "passed": true
+  },
+  {
+    "check": "continuous 282 monthly observations",
+    "passed": true
+  },
+  {
+    "check": "unique primary key",
+    "passed": true
+  },
+  {
+    "check": "nonempty fact table",
+    "passed": true
+  },
+  {
+    "check": "SQL group counts reconcile",
+    "passed": true
+  },
+  {
+    "check": "Python SQL monthly means match",
+    "passed": true
+  }
+]

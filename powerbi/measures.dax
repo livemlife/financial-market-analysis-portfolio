@@ -1,0 +1,10 @@
+Cumulative Price Return =
+VAR FirstDate = MIN(fact[date])
+VAR LastDate = MAX(fact[date])
+VAR FirstPrice = CALCULATE(MAX(fact[price]), fact[date] = FirstDate)
+VAR LastPrice = CALCULATE(MAX(fact[price]), fact[date] = LastDate)
+RETURN IF(ISBLANK(FirstPrice) || ISBLANK(LastPrice), BLANK(), DIVIDE(LastPrice, FirstPrice) - 1)
+
+Annualized Volatility = IF(COUNT(fact[monthly_return]) >= 2, STDEV.S(fact[monthly_return]) * SQRT(12), BLANK())
+
+Max Drawdown Full Baseline = MIN(fact[drawdown])
