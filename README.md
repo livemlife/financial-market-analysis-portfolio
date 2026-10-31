@@ -1,5 +1,21 @@
 # 金融市場の収益とリスク分析
 
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-SQLite-003B57?logo=sqlite&logoColor=white) ![Data](https://img.shields.io/badge/Data-Public%20historical%20data-0F766E) ![Scope](https://img.shields.io/badge/Scope-282%20months-475569)
+
+金融市場の価格変動とリスクを、時系列データから説明する分析です。
+
+**分析の重点：** 時系列分析・収益率計算・リスク指標・データ品質検証
+
+| 閲覧目的 | 成果物 |
+| --- | --- |
+| 結果を確認 | [主要指標](results/metrics.json) · [年別SQL集計](results/sql_result.csv) · [下落月の分析](results/worst_months.csv) |
+| 分析コードを確認 | [Python](analyze.py) · [SQL](analysis.sql) |
+| データの定義を確認 | [分析用CSV](data/fact.csv) · [データ辞書](data/DICTIONARY.md) |
+| 再現性を確認 | [チェック結果](results/validation.json) · [依存パッケージ](requirements.txt) |
+| 報告書を閲覧 | [HTMLレポート](report.html) — ダウンロード・展開後にブラウザーで開く |
+| 今後のBI展開 | [Power BI構築仕様](powerbi/BUILD.md) · [DAX例](powerbi/measures.dax) — Desktop未検証 |
+
+
 公開歴史データ。企業の実績や勤務先のデータを示すものではありません。
 
 ## 課題
@@ -41,3 +57,9 @@ Python 3.11以降で `python -m pip install -r requirements.txt` を実行後、
 ![risk](./charts/risk.svg)
 
 HTMLレポートはこのリポジトリをダウンロード・展開し、`report.html` をブラウザーで開くと閲覧できます。
+
+
+## 関連ポートフォリオ
+
+- [business-process-kpi-portfolio](https://github.com/livemlife/business-process-kpi-portfolio)
+- [software-quality-defect-portfolio](https://github.com/livemlife/software-quality-defect-portfolio)
